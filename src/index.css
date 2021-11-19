@@ -1,9 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Barlow Semi Condensed', sans-serif;
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  color: #fff;
+  background: radial-gradient(circle, #1f3756, #141539);
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.winner a .bg-paper {
+  box-shadow: inset 0 5px 6px grey, 0 8px #0d31e3, 0 0 0 50px hsl(0deg 0% 100% / 7%), 0 0 0 100px hsl(0deg 0% 100% / 5%), 0 0 0 150px hsl(0deg 0% 100% / 3%);
+}
+
+.winner a .bg-rock {
+  box-shadow: inset 0 5px 6px grey, 0 8px #a11b34, 0 0 0 50px hsl(0deg 0% 100% / 7%), 0 0 0 100px hsl(0deg 0% 100% / 5%), 0 0 0 150px hsl(0deg 0% 100% / 3%);
+}
+
+.winner a .bg-scissors {
+  box-shadow: inset 0 5px 6px grey, 0 8px #a46e0a, 0 0 0 50px hsl(0deg 0% 100% / 7%), 0 0 0 100px hsl(0deg 0% 100% / 5%), 0 0 0 150px hsl(0deg 0% 100% / 3%);
 }

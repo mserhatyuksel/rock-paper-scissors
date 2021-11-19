@@ -14,7 +14,7 @@ export const calculateResult = (choice, home) => {
     (choice === "rock" && home === 2) ||
     (choice === "scissors" && home === 1)
   ) {
-    return "equal";
+    return "draw";
   } else {
     return "you lose";
   }
